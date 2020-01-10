@@ -71,4 +71,4 @@ app.post('/', bodyParser.json({limit: '50mb'}), async (req, res) => {
   res.json({ Data: finalYamlDocs.join('\n---\n') })
 })
 
-app.listen(3000)
+app.listen(process.env.PLUGIN_PORT || 3000)
