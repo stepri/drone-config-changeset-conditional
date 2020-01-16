@@ -6,3 +6,4 @@ COPY . .
 RUN yarn
 
 CMD /usr/local/bin/node /app/plugin.js
+
